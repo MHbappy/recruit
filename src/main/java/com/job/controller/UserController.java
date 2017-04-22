@@ -13,6 +13,20 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class UserController {
+
+    @RequestMapping(value="/user/home", method = RequestMethod.GET)
+    public ModelAndView index(){
+        ModelAndView modelAndView = new ModelAndView();
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+//		User user = userService.findUserByEmail(auth.getName());
+//		modelAndView.addObject("userName", "Welcome " + user.getName() + " " + user.getLastName() + " (" + user.getEmail() + ")");
+//		modelAndView.addObject("adminMessage","Content Available Only for Users with Admin Role");
+        modelAndView.setViewName("/user/home");
+        return modelAndView;
+    }
+
+
+
     @RequestMapping(value="/user/userEducationInfo", method = RequestMethod.GET)
     public ModelAndView userEducationInfo(){
         ModelAndView modelAndView = new ModelAndView();
@@ -56,4 +70,10 @@ public class UserController {
         modelAndView.setViewName("user/userTrainingInformation");
         return modelAndView;
     }
+
+
+    //test purpose
+
+
+
 }
