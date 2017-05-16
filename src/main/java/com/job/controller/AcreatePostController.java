@@ -72,7 +72,7 @@ public class AcreatePostController {
         logger.info("+++++++++++++"+createPost.toString());
 
         createPostService.saveCreatePost(createPost);
-        return "redirect:/admin/adminCreatePost";
+        return "redirect:/admin/adminCreatePost/new";
     }
 
 
