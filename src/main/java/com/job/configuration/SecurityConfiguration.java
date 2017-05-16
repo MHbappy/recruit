@@ -17,6 +17,8 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
+//	https://springframework.guru/spring-boot-web-application-part-4-spring-mvc/
+
 	@Autowired
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 
