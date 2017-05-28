@@ -10,29 +10,17 @@
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#" th:href="@{/}">Home</a>
+                    <!--<a class="navbar-brand" href="#" th:href="@{/}">Home</a>-->
                     <ul class="nav navbar-nav">
-                        <li><a href="#" th:href="@{/products}">Products</a></li>
-                        <li><a href="#" th:href="@{/product/new}">Create Product</a></li>
+                        <li><a href="http://localhost:8080/admin/adminCreatePostList">Create Post</a></li>
+                        <li><a href="http://localhost:8080/admin/adminWrittenNotificationList">Call For written Exam</a></li>
+                        <li><a href="http://localhost:8080/admin/adminCallForVivaList">Call For Viva</a></li>
+                        <li><a href="http://localhost:8080/admin/adminSendAppointmentList">Send Appoinment</a></li>
                     </ul>
 
                 </div>
             </div>
         </nav>
-
-        <div class="jumbotron">
-            <div class="row text-center">
-                <div class="">
-                    <h2>Spring Framework Guru</h2>
-
-                    <h3>Spring Boot Web App</h3>
-                </div>
-            </div>
-            <div class="row text-center">
-                <img src="../../static/images/newbanner.png" width="400" height="200"
-                     th:src="@{/images/newbanner.png}"/>
-            </div>
-        </div>
     </div>
 </div>
 </body>

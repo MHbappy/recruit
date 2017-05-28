@@ -13,24 +13,35 @@ import java.util.Date;
 @Table(name = "call_for_viva")
 public class CallForViva {
 
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private int id;
 
-    @Column(name = "create_post_id")
-    private int createPostId;
+    @Column(name = "GENERAL_INFORMATION_ID")
+    private int generalInformationId;
 
     @Column(name = "viva_venue_name", length = 200)
     private String vivaVenueName;
 
     @Column(name = "date_viva")
-    @Type(type = "date")
-    private Date dateViva;
+    private String dateViva;
 
     @Column(name = "date_time")
-    @Type(type = "date")
-    private Date dateTime;
+    private String dateTime;
+
+
+    private String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public int getId() {
         return id;
@@ -40,12 +51,12 @@ public class CallForViva {
         this.id = id;
     }
 
-    public int getCreatePostId() {
-        return createPostId;
+    public int getGeneralInformationId() {
+        return generalInformationId;
     }
 
-    public void setCreatePostId(int createPostId) {
-        this.createPostId = createPostId;
+    public void setGeneralInformationId(int generalInformationId) {
+        this.generalInformationId = generalInformationId;
     }
 
     public String getVivaVenueName() {
@@ -56,19 +67,19 @@ public class CallForViva {
         this.vivaVenueName = vivaVenueName;
     }
 
-    public Date getDateViva() {
+    public String getDateViva() {
         return dateViva;
     }
 
-    public void setDateViva(Date dateViva) {
+    public void setDateViva(String dateViva) {
         this.dateViva = dateViva;
     }
 
-    public Date getDateTime() {
+    public String getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(Date dateTime) {
+    public void setDateTime(String dateTime) {
         this.dateTime = dateTime;
     }
 
@@ -76,10 +87,10 @@ public class CallForViva {
     public String toString() {
         return "CallForViva{" +
                 "id=" + id +
-                ", createPostId=" + createPostId +
+                ", generalInformationId=" + generalInformationId +
                 ", vivaVenueName='" + vivaVenueName + '\'' +
-                ", dateViva=" + dateViva +
-                ", dateTime=" + dateTime +
+                ", dateViva='" + dateViva + '\'' +
+                ", dateTime='" + dateTime + '\'' +
                 '}';
     }
 }

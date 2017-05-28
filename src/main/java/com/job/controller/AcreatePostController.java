@@ -44,7 +44,7 @@ public class AcreatePostController {
         logger.info("_____________"+createPostService.listAllProducts());
 
         model.addAttribute("createPosts", createPostService.listAllProducts());
-        return "admin/action/listOfCreatePost";
+        return "admin/createPostAction/listOfCreatePost";
     }
     //tested
     @RequestMapping("admin/adminCreatePostList/{id}")
@@ -52,7 +52,7 @@ public class AcreatePostController {
 
         logger.info("id+++++++++"+id);
         model.addAttribute("createPosts", createPostService.getCreatePostById(id));
-        return "admin/action/showOfCreatePosts";
+        return "admin/createPostAction/showOfCreatePosts";
     }
 
      //tested
@@ -69,25 +69,27 @@ public class AcreatePostController {
 
         logger.info("_______________________");
 
-        logger.info("+++++++++++++"+createPost.toString());
-
         createPostService.saveCreatePost(createPost);
         return "redirect:/admin/adminCreatePost/new";
     }
 
 
-        @RequestMapping("admin/adminCreatePost/new")
+    @RequestMapping("admin/adminCreatePost/new")
     public String newProduct(Model model){
         model.addAttribute("createPosts", new CreatePost());
         return "admin/adminCreatePost";
     }
 
 
-    @RequestMapping("product/edit/{id}")
+    @RequestMapping("admin/adminCreatePost/edit/{id}")
     public String edit(@PathVariable Integer id, Model model){
         model.addAttribute("createPosts", createPostService.getCreatePostById(id));
         return "admin/adminCreatePost";
     }
 
-
+    @RequestMapping("admin/adminCreatePost/show/{id}")
+    public String showPost(@PathVariable Integer id, Model model){
+        model.addAttribute("createPost", createPostService.getCreatePostById(id));
+        return "admin/createPostAction/singleCreatePost";
+    }
 }

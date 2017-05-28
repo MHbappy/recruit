@@ -37,12 +37,10 @@ public class CreatePost {
     private String comments;
 
     @Column(name = "publish_date")
-    @Type(type="date")
-    private Date publishDate;
+    private String publishDate;
 
     @Column(name = "applicaton_dead_line")
-    @Type(type="date")
-    private Date applicatonDeadLine;
+    private String applicatonDeadLine;
 
     @Column(name = "file_data")
     private byte[] fileData;
@@ -111,19 +109,19 @@ public class CreatePost {
         this.comments = comments;
     }
 
-    public Date getPublishDate() {
+    public String getPublishDate() {
         return publishDate;
     }
 
-    public void setPublishDate(Date publishDate) {
+    public void setPublishDate(String publishDate) {
         this.publishDate = publishDate;
     }
 
-    public Date getApplicatonDeadLine() {
+    public String getApplicatonDeadLine() {
         return applicatonDeadLine;
     }
 
-    public void setApplicatonDeadLine(Date applicatonDeadLine) {
+    public void setApplicatonDeadLine(String applicatonDeadLine) {
         this.applicatonDeadLine = applicatonDeadLine;
     }
 

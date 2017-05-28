@@ -47,123 +47,37 @@
             <a class="navbar-brand" href="index.html">SB Admin</a>
         </div>
         <!-- Top Menu Items -->
+
         <ul class="nav navbar-right top-nav">
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
-                <ul class="dropdown-menu message-dropdown">
-                    <li class="message-preview">
-                        <a href="#">
-                            <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                <div class="media-body">
-                                    <h5 class="media-heading"><strong>John Smith</strong>
-                                    </h5>
-                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="message-preview">
-                        <a href="#">
-                            <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                <div class="media-body">
-                                    <h5 class="media-heading"><strong>John Smith</strong>
-                                    </h5>
-                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="message-preview">
-                        <a href="#">
-                            <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                <div class="media-body">
-                                    <h5 class="media-heading"><strong>John Smith</strong>
-                                    </h5>
-                                    <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="message-footer">
-                        <a href="#">Read All New Messages</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                <ul class="dropdown-menu alert-dropdown">
-                    <li>
-                        <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
-                    </li>
-                    <li>
-                        <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
-                    </li>
-                    <li>
-                        <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
-                    </li>
-                    <li>
-                        <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
-                    </li>
-                    <li>
-                        <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
-                    </li>
-                    <li>
-                        <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#">View All</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                    </li>
-                </ul>
+            <li class="active">
+                <a href="http://localhost:8080/logout"><i class="fa fa-fw fa-dashboard"></i>Logout</a>
             </li>
         </ul>
+
         <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li class="active">
-                    <a href="home"><i class="fa fa-fw fa-dashboard"></i>Home</a>
+                    <a href="http://localhost:8080/admin/home"><i class="fa fa-fw fa-dashboard"></i>Home</a>
                 </li>
                 <li>
-                    <a href="adminCreatePost"><i class="fa fa-fw fa-desktop"></i>Create Post</a>
+                    <a href="http://localhost:8080/admin/adminCreatePost/new"><i class="fa fa-fw fa-desktop"></i>Create Post</a>
                 </li>
                 <li>
-                    <a href="adminWrittenNotification"><i class="fa fa-fw fa-dashboard"></i>Call For Written Exam</a>
+                    <a href="http://localhost:8080/admin/adminWrittenNotification/new"><i class="fa fa-fw fa-dashboard"></i>Call For Written Exam</a>
                 </li>
                 <li>
-                    <a href="adminVivaNotification"><i class="fa fa-fw fa-table"></i>Call For Viva</a>
+                    <a href="http://localhost:8080/admin/adminCallForViva/new"><i class="fa fa-fw fa-table"></i>Call For Viva</a>
                 </li>
                 <li>
-                    <a href="adminAppintmentNotification"><i class="fa fa-fw fa-edit"></i>Send Appointment</a>
+                    <a href="http://localhost:8080/admin/adminSendAppointment/new"><i class="fa fa-fw fa-edit"></i>Send Appointment</a>
+                </li>
+
+                <li>
+                    <a href="http://localhost:8080/admin/adminCreatePostList"><i class="fa fa-fw fa-edit"></i>Maintain Posts</a>
+                </li>
+                <li>
+                    <a href="http://localhost:8080/user/home"><i class="fa fa-fw fa-edit"></i>User</a>
                 </li>
                 <!--<li>-->
                 <!--<a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>-->
@@ -180,7 +94,7 @@
                 <!--<a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>-->
                 <!--</li>-->
                 <!--<li>-->
-                <!--<a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>-->
+                <!--<a href="index-rtl.html"><i class="fa fa-fw      fa-dashboard"></i> RTL Dashboard</a>-->
                 <!--</li>-->
             </ul>
         </div>
@@ -209,44 +123,38 @@
             </div>
             <!-- /.row -->
 
+
+
+
             <div class="row">
                 <div class="col-lg-12">
 
-                    <form role="form">
+                        <form role="form" th:object="${sendAppointment}" th:action="@{/sendAppointments}" method="post">
                         <div class="col-lg-6">
-                            <div class="form-group input-group">
-                                <input type="text" class="form-control">
-                                <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
-                            </div>
+
+                            <input type="hidden" th:field="*{id}"/>
+
                             <div class="form-group">
-                                <label for="applicantsName">Applicant's Name</label>
-                                <input class="form-control" id="applicantsName" type="text" placeholder="Disabled input" disabled>
+                                <label>Registrstion Number :</label>
+                                <input class="form-control" th:field="*{createPostId}">
+                                <p class="help-block"></p>
                             </div>
+
                             <div class="form-group">
-                                <label for="dateOfBirth">Date Of Birth</label>
-                                <input class="form-control" id="dateOfBirth" type="date" placeholder="Disabled input" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="postName">Post Name</label>
-                                <input class="form-control" id="postName" type="text" placeholder="Disabled input" disabled>
+                                <label>Email :</label>
+                                <input class="form-control" th:field="*{email}">
+                                <p class="help-block">Example block-level help text here.</p>
                             </div>
 
                         </div>
 
                         <div class="col-lg-6">
 
-                            <div class="form-group">
-                                <label for="nationality">Nationality</label>
-                                <input class="form-control" id="nationality" type="text" placeholder="Disabled input" disabled>
-                            </div>
-                            <div class="form-group">
-                                <label for="nationalId">National ID:</label>
-                                <input class="form-control" id="nationalId" type="text" placeholder="Disabled input" disabled>
-                            </div>
+
 
                             <div class="form-group">
                                 <label>File input</label>
-                                <input type="file">
+                                <input type="file" th:field="*{fileData}">
                             </div>
 
                         </div>

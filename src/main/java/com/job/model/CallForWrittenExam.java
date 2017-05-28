@@ -2,12 +2,11 @@ package com.job.model;
 
 import org.hibernate.annotations.Type;
 
-import javax.persistence.*;
-import java.util.Date;
 
-/**
- * Created by bappy on 5/13/17.
- */
+import javax.persistence.*;
+
+
+
 @Entity
 @Table(name = "callForWrittenExam")
 public class CallForWrittenExam {
@@ -28,15 +27,23 @@ public class CallForWrittenExam {
     private String vanueName;
 
     @Column(name = "exam_date")
-    @Type(type = "date")
-    private Date examDate;
+    private String examDate;
 
     @Column(name = "exam_time")
-    @Type(type = "date")
-    private Date examTime;
+    private String examTime;
 
     @Column(name = "selec_all", length = 50)
     private String selectAll;
+
+    private String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public int getId() {
         return id;
@@ -70,19 +77,19 @@ public class CallForWrittenExam {
         this.vanueName = vanueName;
     }
 
-    public Date getExamDate() {
+    public String getExamDate() {
         return examDate;
     }
 
-    public void setExamDate(Date examDate) {
+    public void setExamDate(String examDate) {
         this.examDate = examDate;
     }
 
-    public Date getExamTime() {
+    public String getExamTime() {
         return examTime;
     }
 
-    public void setExamTime(Date examTime) {
+    public void setExamTime(String examTime) {
         this.examTime = examTime;
     }
 

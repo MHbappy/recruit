@@ -11,34 +11,26 @@ import org.springframework.stereotype.Service;
 @Service
 public class CreatePostServiceImpl implements CreatePostService {
 
-
     private CreatePostRepository createPostRepository;
 
     @Autowired
     public void setCreatePostRepository(CreatePostRepository createPostRepository) {
         this.createPostRepository = createPostRepository;
     }
-
-
     @Override
     public Iterable<CreatePost> listAllProducts() {
         return createPostRepository.findAll();
     }
-
     @Override
     public CreatePost getCreatePostById(Integer id) {
         return createPostRepository.findOne(id);
     }
-
     @Override
     public CreatePost saveCreatePost(CreatePost createPost) {
         return createPostRepository.save(createPost);
     }
-
     @Override
     public void deleteCreatePost(Integer id) {
         createPostRepository.delete(id);
     }
-
-
 }
